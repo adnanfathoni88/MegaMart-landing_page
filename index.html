@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <title>MEGAMART</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../src/css/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link href="./src/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+
     <!-- icon font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -17,6 +18,10 @@
 
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 
@@ -52,7 +57,7 @@
     <!-- navbar -->
     <section id="navbar">
         <div class="px-4 md:px-32">
-            <div class="py-5 md:py-0 flex flex-col md:flex-row justify-between items-center">
+            <div class="py-5 flex flex-col md:flex-row justify-between items-center">
                 <div class="nav-left flex items-center">
                     <h4 class="text-custom-blue text-2xl font-bold mx-4">MegaMart</h4>
                     <div class="toogle">
@@ -64,7 +69,7 @@
                     </div>
                 </div>
                 <div id="nav-right"
-                    class="nav-right md:absolute lg:relative md:top-20 lg:top-0 md:z-50 md:bg-white md:px-12 md:p-6 lg:flex flex-col lg:flex-row items-center gap-8">
+                    class="nav-right md:absolute lg:relative md:top-20 lg:top-0 md:z-50 md:bg-white md:px-12 hidden md:flex flex-col lg:flex-row items-center gap-8">
                     <div class="search bg-custom-blue-light flex p-4 rounded-lg">
                         <i class="text-custom-blue font-light fa-solid fa-search"></i>
                         <input class="pl-2.5 bg-transparent pr-4 lg:pr-44" type="text"
@@ -114,7 +119,7 @@
     <!-- banner -->
     <section id="banner">
         <div class="px-4 md:px-32">
-            <div class="py-5 relative">
+            <div data-aos="fade-up" data-aos-duration="1000" class="md:py-5 relative">
                 <div class="absolute z-10 -right-2 md:-right-8 inset-y-0 flex w-fit items-center">
                     <div class="button-next bg-custom-blue-light px-3 py-1 md:px-8 md:py-6 w-fit rounded-full">
                         <i class="text-custom-blue fa-solid fa-chevron-right"></i>
@@ -128,10 +133,10 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide px-2">
-                            <img class="w-full" src="./assets/img/ecom/banner/banner-1.png" alt="">
+                            <img class="w-full" src="./public/assets/img/ecom/banner/banner-1.png" alt="">
                         </div>
                         <div class="swiper-slide px-2">
-                            <img class="w-full" src="./assets/img/ecom/banner/banner-1.png" alt="">
+                            <img class="w-full" src="./public/assets/img/ecom/banner/banner-1.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -142,7 +147,7 @@
     <!-- smartphone -->
     <section id="smartphone">
         <div class="px-4 md:mx-32 mt-8 md:mt-32 mb-8 md:mb-24">
-            <div class="flex justify-between border-b items-center">
+            <div data-aos="fade-up" data-aos-duration="1000" class="flex justify-between border-b items-center">
                 <h2 class=" border-b-4 border-custom-blue w-fit pb-2 text-slate-500 text-sm md:text-lg font-semibold ">
                     Grab the
                     best
@@ -152,7 +157,7 @@
                 </button>
             </div>
             <div class="product-group grid grid-cols-2 lg:grid-cols-5 gap-4 mt-4 md:mt-10">
-                <div
+                <div data-aos="fade-up" data-aos-duration="1500"
                     class="product-item cursor-pointer w-full border rounded-2xl hover:shadow-xl hover:border-custom-blue hover:border-2 ">
                     <div class="product-image h-[174px] relative bg-[#F5F5F5] flex justify-center p-4 rounded-t-2xl">
                         <div
@@ -161,7 +166,7 @@
                                 <span class="font-sm">20% <br> OFF</span>
                             </div>
                         </div>
-                        <img src="./assets/img/ecom/product/produk-1.png" alt="">
+                        <img src="./public/assets/img/ecom/product/produk-1.png" alt="">
                     </div>
                     <div class="product-info p-2 md:p-3">
                         <h4 class="font-semibold text-sm md:text-base mb-2.5">Galaxy S22 Ultra</h4>
@@ -173,7 +178,7 @@
                         <div class="text-green-600 font-semibold"> Save $300.00</div>
                     </div>
                 </div>
-                <div
+                <div data-aos="fade-up" data-aos-duration="1500"
                     class="product-item cursor-pointer w-full border rounded-2xl hover:shadow-xl hover:border-custom-blue hover:border-2 ">
                     <div class="product-image h-[174px] relative bg-[#F5F5F5] flex justify-center p-4 rounded-t-2xl">
                         <div
@@ -182,7 +187,7 @@
                                 <span class="font-sm">20% <br> OFF</span>
                             </div>
                         </div>
-                        <img src="./assets/img/ecom/product/produk-2.png" alt="">
+                        <img src="./public/assets/img/ecom/product/produk-2.png" alt="">
                     </div>
                     <div class="product-info p-2 md:p-3">
                         <h4 class="font-semibold text-sm md:text-base mb-2.5">Galaxy M13 (4GB | 64 GB )</h4>
@@ -194,7 +199,7 @@
                         <div class="text-green-600 font-semibold"> Save $300.00</div>
                     </div>
                 </div>
-                <div
+                <div data-aos="fade-up" data-aos-duration="1500"
                     class="product-item cursor-pointer w-full border rounded-2xl hover:shadow-xl hover:border-custom-blue hover:border-2 ">
                     <div class="product-image h-[174px] relative bg-[#F5F5F5] flex justify-center p-4 rounded-t-2xl">
                         <div
@@ -203,7 +208,7 @@
                                 <span class="font-sm">20% <br> OFF</span>
                             </div>
                         </div>
-                        <img src="./assets/img/ecom/product/produk-3.png" alt="">
+                        <img src="./public/assets/img/ecom/product/produk-3.png" alt="">
                     </div>
                     <div class="product-info p-2 md:p-3">
                         <h4 class="font-semibold text-sm md:text-base mb-2.5">Galaxy M33 (4GB | 64 GB )</h4>
@@ -215,7 +220,7 @@
                         <div class="text-green-600 font-semibold"> Save $300.00</div>
                     </div>
                 </div>
-                <div
+                <div data-aos="fade-up" data-aos-duration="1500"
                     class="product-item cursor-pointer w-full border rounded-2xl hover:shadow-xl hover:border-custom-blue hover:border-2 ">
                     <div class="product-image h-[174px] relative bg-[#F5F5F5] flex justify-center p-4 rounded-t-2xl">
                         <div
@@ -224,7 +229,7 @@
                                 <span class="font-sm">20% <br> OFF</span>
                             </div>
                         </div>
-                        <img src="./assets/img/ecom/product/produk-4.png" alt="">
+                        <img src="./public/assets/img/ecom/product/produk-4.png" alt="">
                     </div>
                     <div class="product-info p-2 md:p-3">
                         <h4 class="font-semibold text-sm md:text-base mb-2.5">Galaxy M53 (4GB | 64 GB )</h4>
@@ -236,7 +241,7 @@
                         <div class="text-green-600 font-semibold"> Save $300.00</div>
                     </div>
                 </div>
-                <div
+                <div data-aos="fade-up" data-aos-duration="1500"
                     class="product-item cursor-pointer w-full border rounded-2xl hover:shadow-xl hover:border-custom-blue hover:border-2 ">
                     <div class="product-image h-[174px] relative bg-[#F5F5F5] flex justify-center p-4 rounded-t-2xl">
                         <div
@@ -245,7 +250,7 @@
                                 <span class="font-sm">20% <br> OFF</span>
                             </div>
                         </div>
-                        <img src="./assets/img/ecom/product/produk-5.png" alt="">
+                        <img src="./public/assets/img/ecom/product/produk-5.png" alt="">
                     </div>
                     <div class="product-info p-2 md:p-3">
                         <h4 class="font-semibold text-sm md:text-base mb-2.5">Galaxy S22 Ultra</h4>
@@ -265,7 +270,7 @@
     <!-- top-categories -->
     <section id="top-categories">
         <div class="mx-4 md:mx-32 mt-8 md:mt-32 mb-8 md:mb-24">
-            <div class="flex justify-between border-b items-center">
+            <div data-aos="fade-up" data-aos-duration="1000" class="flex justify-between border-b items-center">
                 <h2 class=" border-b-4 border-custom-blue w-fit pb-2 text-slate-500 text-sm md:text-lg font-semibold ">
                     Shop From
                     <span class=" text-custom-blue">Top Categories</span>
@@ -275,52 +280,59 @@
                 </button>
             </div>
             <div class="categories-group flex justify-between grid grid-cols-4 lg:grid-cols-7 gap-4 mt-10">
-                <div class="categories-item cursor-pointer flex flex-col items-center group">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="categories-item cursor-pointer flex flex-col items-center group">
                     <div
                         class="bg-[#F5F5F5] p-4 md:p-6 rounded-full flex justify-center items-center h-20 w-20 md:w-[132px] md:h-[132px]  group-hover:border-custom-blue group-hover:border group-hover:shadow-xl ">
-                        <img class="h-full object-cover" src="./assets/img/ecom/categories/cat-1.png" alt="">
+                        <img class="h-full object-cover" src="./public/assets/img/ecom/categories/cat-1.png" alt="">
                     </div>
                     <span class="mt-5 group-hover:font-semibold">Mobile</span>
                 </div>
-                <div class="categories-item cursor-pointer flex flex-col items-center group">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="categories-item cursor-pointer flex flex-col items-center group">
                     <div
                         class="bg-[#F5F5F5] p-4 md:p-8 rounded-full flex justify-center items-center h-20 w-20 md:w-[132px] md:h-[132px]  group-hover:border-custom-blue group-hover:border group-hover:shadow-xl ">
-                        <img class="h-full object-cover" src="./assets/img/ecom/categories/cat-2.png" alt="">
+                        <img class="h-full object-cover" src="./public/assets/img/ecom/categories/cat-2.png" alt="">
                     </div>
                     <span class="mt-5 group-hover:font-semibold">Cosmetic</span>
                 </div>
-                <div class="categories-item cursor-pointer flex flex-col items-center group">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="categories-item cursor-pointer flex flex-col items-center group">
                     <div
                         class="bg-[#F5F5F5] p-4 md:p-8 rounded-full flex justify-center items-center h-20 w-20 md:w-[132px] md:h-[132px]  group-hover:border-custom-blue group-hover:border group-hover:shadow-xl ">
-                        <img class="h-full object-cover" src="./assets/img/ecom/categories/cat-3.png" alt="">
+                        <img class="h-full object-cover" src="./public/assets/img/ecom/categories/cat-3.png" alt="">
                     </div>
                     <span class="mt-5 group-hover:font-semibold">Electronics</span>
                 </div>
-                <div class="categories-item cursor-pointer flex flex-col items-center group">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="categories-item cursor-pointer flex flex-col items-center group">
                     <div
                         class="bg-[#F5F5F5] p-4 md:p-8 rounded-full flex justify-center items-center h-20 w-20 md:w-[132px] md:h-[132px]  group-hover:border-custom-blue group-hover:border group-hover:shadow-xl ">
-                        <img class="h-full object-cover" src="./assets/img/ecom/categories/cat-4.png" alt="">
+                        <img class="h-full object-cover" src="./public/assets/img/ecom/categories/cat-4.png" alt="">
                     </div>
                     <span class="mt-5 group-hover:font-semibold">Furniture</span>
                 </div>
-                <div class="categories-item cursor-pointer flex flex-col items-center group">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="categories-item cursor-pointer flex flex-col items-center group">
                     <div
                         class="bg-[#F5F5F5] p-4 md:p-8 rounded-full flex justify-center items-center h-20 w-20 md:w-[132px] md:h-[132px]  group-hover:border-custom-blue group-hover:border group-hover:shadow-xl ">
-                        <img class="h-full object-cover" src="./assets/img/ecom/categories/cat-5.png" alt="">
+                        <img class="h-full object-cover" src="./public/assets/img/ecom/categories/cat-5.png" alt="">
                     </div>
                     <span class="mt-5 group-hover:font-semibold">Watches</span>
                 </div>
-                <div class="categories-item cursor-pointer flex flex-col items-center group">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="categories-item cursor-pointer flex flex-col items-center group">
                     <div
                         class="bg-[#F5F5F5] p-4 md:p-8 rounded-full flex justify-center items-center h-20 w-20 md:w-[132px] md:h-[132px]  group-hover:border-custom-blue group-hover:border group-hover:shadow-xl ">
-                        <img class="h-full object-cover" src="./assets/img/ecom/categories/cat-6.png" alt="">
+                        <img class="h-full object-cover" src="./public/assets/img/ecom/categories/cat-6.png" alt="">
                     </div>
                     <span class="mt-5 group-hover:font-semibold">Decor</span>
                 </div>
-                <div class="categories-item cursor-pointer flex flex-col items-center group">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="categories-item cursor-pointer flex flex-col items-center group">
                     <div
                         class="bg-[#F5F5F5] p-4 md:p-8 rounded-full flex justify-center items-center h-20 w-20 md:w-[132px] md:h-[132px]  group-hover:border-custom-blue group-hover:border group-hover:shadow-xl ">
-                        <img class="h-full object-cover" src="./assets/img/ecom/categories/cat-7.png" alt="">
+                        <img class="h-full object-cover" src="./public/assets/img/ecom/categories/cat-7.png" alt="">
                     </div>
                     <span class="mt-5 group-hover:font-semibold">Accessories</span>
                 </div>
@@ -330,7 +342,7 @@
     <!-- top-electronic -->
     <section id="top-electronic">
         <div class="mx-4 md:mx-32 mt-8 mb-12 md:mt-32 md:mb-24">
-            <div class="flex justify-between border-b items-center">
+            <div data-aos="fade-up" data-aos-duration="1000" class="flex justify-between border-b items-center">
                 <h2 class=" border-b-4 border-custom-blue w-fit pb-2 text-slate-500 text-sm md:text-lg font-semibold ">
                     Top
                     <span class=" text-custom-blue">Electronics Brands</span>
@@ -340,15 +352,18 @@
                 </button>
             </div>
             <div class="electronic-group flex justify-between grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 md:mt-10">
-                <div class="electronic-item flex justify-center rounded-2xl w-full">
-                    <img class="w-full object-cover" src="./assets/img/ecom/top-electronic/top-1.png" alt="">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="electronic-item flex justify-center rounded-2xl w-full">
+                    <img class="w-full object-cover" src="./public/assets/img/ecom/top-electronic/top-1.png" alt="">
                 </div>
-                <div class="electronic-item flex justify-center rounded-2xl w-full">
-                    <img class="w-full object-cover" src="./assets/img/ecom/top-electronic/top-2.png" alt="">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="electronic-item flex justify-center rounded-2xl w-full">
+                    <img class="w-full object-cover" src="./public/assets/img/ecom/top-electronic/top-2.png" alt="">
 
                 </div>
-                <div class="electronic-item flex justify-center rounded-2xl w-full">
-                    <img class="w-full object-cover" src="./assets/img/ecom/top-electronic/top-3.png" alt="">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="electronic-item flex justify-center rounded-2xl w-full">
+                    <img class="w-full object-cover" src="./public/assets/img/ecom/top-electronic/top-3.png" alt="">
 
                 </div>
 
@@ -358,7 +373,7 @@
     <!-- Essentials -->
     <section id="Essentials">
         <div class="mx-4 md:mx-32 mt-8 mb-12 md:mt-32 md:mb-24">
-            <div class="flex justify-between border-b items-center">
+            <div data-aos="fade-up" data-aos-duration="1000" class="flex justify-between border-b items-center">
                 <h2 class=" border-b-4 border-custom-blue w-fit pb-2 text-slate-500 text-sm md:text-lg font-semibold ">
                     Daily
                     <span class=" text-custom-blue">Essentials</span>
@@ -368,50 +383,56 @@
                 </button>
             </div>
             <div class="essential-group flex justify-between grid grid-cols-3 lg:grid-cols-6 gap-4 mt-10">
-                <div class="essential-item cursor-pointer group flex flex-col items-center">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="essential-item cursor-pointer group flex flex-col items-center">
                     <div
                         class="mb-5 p-4 flex items-center bg-[#F5F5F5] h-full md:w-[187px] md:h-[187px] rounded-2xl group-hover:border group-hover:border-2 group-hover:border-custom-blue group-hover:shadow-xl ">
-                        <img class="w-full" src="./assets/img/ecom/essential/est-1.png" alt="">
+                        <img class="w-full" src="./public/assets/img/ecom/essential/est-1.png" alt="">
                     </div>
                     <span class="text-slate-400 text-sm">Daily</span>
                     <h5 class="text-slate-950 font-semibold text-sm md:text-lg text-center">UP to 50% OFF</h5>
                 </div>
-                <div class="essential-item cursor-pointer group flex flex-col items-center">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="essential-item cursor-pointer group flex flex-col items-center">
                     <div
                         class="mb-5 p-4 flex items-center bg-[#F5F5F5] h-full md:w-[187px] md:h-[187px] rounded-2xl group-hover:border group-hover:border-2 group-hover:border-custom-blue group-hover:shadow-xl ">
-                        <img class="w-full" src="./assets/img/ecom/essential/est-2.png" alt="">
+                        <img class="w-full" src="./public/assets/img/ecom/essential/est-2.png" alt="">
                     </div>
                     <span class="text-slate-400 text-sm">Vegitables</span>
                     <h5 class="text-slate-950 font-semibold text-sm md:text-lg text-center">UP to 50% OFF</h5>
                 </div>
-                <div class="essential-item cursor-pointer group flex flex-col items-center">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="essential-item cursor-pointer group flex flex-col items-center">
                     <div
                         class="mb-5 p-4 flex items-center bg-[#F5F5F5] h-full md:w-[187px] md:h-[187px] rounded-2xl group-hover:border group-hover:border-2 group-hover:border-custom-blue group-hover:shadow-xl ">
-                        <img class="w-full" src="./assets/img/ecom/essential/est-3.png" alt="">
+                        <img class="w-full" src="./public/assets/img/ecom/essential/est-3.png" alt="">
                     </div>
                     <span class="text-slate-400 text-sm">Fruits</span>
                     <h5 class="text-slate-950 font-semibold text-sm md:text-lg text-center">UP to 50% OFF</h5>
                 </div>
-                <div class="essential-item cursor-pointer group flex flex-col items-center">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="essential-item cursor-pointer group flex flex-col items-center">
                     <div
                         class="mb-5 p-4 flex items-center bg-[#F5F5F5] h-full md:w-[187px] md:h-[187px] rounded-2xl group-hover:border group-hover:border-2 group-hover:border-custom-blue group-hover:shadow-xl ">
-                        <img class="w-full" src="./assets/img/ecom/essential/est-4.png" alt="">
+                        <img class="w-full" src="./public/assets/img/ecom/essential/est-4.png" alt="">
                     </div>
                     <span class="text-slate-400 text-sm">Strowberry</span>
                     <h5 class="text-slate-950 font-semibold text-sm md:text-lg text-center">UP to 50% OFF</h5>
                 </div>
-                <div class="essential-item cursor-pointer group flex flex-col items-center">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="essential-item cursor-pointer group flex flex-col items-center">
                     <div
                         class="mb-5 p-4 flex items-center bg-[#F5F5F5] h-full md:w-[187px] md:h-[187px] rounded-2xl group-hover:border group-hover:border-2 group-hover:border-custom-blue group-hover:shadow-xl ">
-                        <img class="w-full" src="./assets/img/ecom/essential/est-5.png" alt="">
+                        <img class="w-full" src="./public/assets/img/ecom/essential/est-5.png" alt="">
                     </div>
                     <span class="text-slate-400 text-sm">Manggo</span>
                     <h5 class="text-slate-950 font-semibold text-sm md:text-lg text-center">UP to 50% OFF</h5>
                 </div>
-                <div class="essential-item cursor-pointer group flex flex-col items-center">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="essential-item cursor-pointer group flex flex-col items-center">
                     <div
                         class="mb-5 p-4 flex items-center bg-[#F5F5F5] h-full md:w-[187px] md:h-[187px] rounded-2xl group-hover:border group-hover:border-2 group-hover:border-custom-blue group-hover:shadow-xl ">
-                        <img class="w-full" src="./assets/img/ecom/essential/est-6.png" alt="">
+                        <img class="w-full" src="./public/assets/img/ecom/essential/est-6.png" alt="">
                     </div>
                     <span class="text-slate-400 text-sm">Cherry</span>
                     <h5 class="text-slate-950 font-semibold text-sm md:text-lg text-center">UP to 50% OFF</h5>
@@ -447,11 +468,11 @@
                     <h5 class="font-semibold mb-3 text-md">Download App</h5>
                     <div class="flex gap-2 w-full">
                         <div class="w-full md:w-40">
-                            <img class="w-full h-full object-cover" src="./assets/img/ecom/downlad-app/app-2.png"
+                            <img class="w-full h-full object-cover" src="./public/assets/img/ecom/downlad-app/app-2.png"
                                 alt="">
                         </div>
                         <div class="w-full md:w-40">
-                            <img class="w-full h-full object-cover" src="./assets/img/ecom/downlad-app/app-1.png"
+                            <img class="w-full h-full object-cover" src="./public/assets/img/ecom/downlad-app/app-1.png"
                                 alt="">
                         </div>
                     </div>
@@ -489,11 +510,17 @@
             <span>© 2022 All rights reserved. Reliance Retail Ltd.</span>
         </div>
 
-        <img class="absolute z-0 top-0 right-0" src="./assets/img/ecom/footer/component-1.png" alt="">
+        <img class="absolute z-0 top-0 right-0" src="./public/assets/img/ecom/footer/component-1.png" alt="">
     </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Initialize Swiper -->
     <script>
